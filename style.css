@@ -1,0 +1,152 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #121316;
+  min-height: 100vh;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+/*Estilizando o card principal*/
+main {
+  background-color: #ffffff;
+  width: 42.8rem;
+  height: 44rem;
+  border-radius: 6px;
+  padding: 48px 64px 64px;
+}
+main .formulario h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #0c3440;
+
+  margin-bottom: 3.2rem;
+}
+/*Parte do formulario*/
+
+main .formulario label {
+  position: relative;
+  display: block;
+  margin-top: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #00453a;
+}
+main .formulario > label {
+  margin-bottom: 1.6rem;
+}
+
+main .formulario input {
+  margin-top: 8px;
+  width: 100%;
+  height: 5.2rem;
+  background-color: #dce2e9;
+  border: 1px solid #02799d;
+  border-radius: 4px;
+
+  font-weight: 700;
+  color: #544b4b;
+
+  padding: 1.6rem;
+  outline: none;
+}
+
+main .formulario .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  width: 100%;
+  height: 5.2rem;
+
+  margin-top: 3.2rem;
+  background-color: #02799d;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+main .formulario .submit:hover {
+  background-color: #015e7a;
+}
+
+/*Modal com o resultado do IMC*/
+.invisible {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 280px;
+  left: 478px;
+
+  background-color: #ffffff;
+  max-width: 45rem;
+  height: 16rem;
+
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  border-radius: 6px;
+}
+.modal h3 {
+  font-size: 3.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.modal .botão {
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+
+  cursor: pointer;
+}
+
+/*Display de erro*/
+section {
+  display: none;
+}
+section.error {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  background-color: #f03e3e;
+  width: 100%;
+  color: #ffffff;
+  padding: 8px;
+
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+}
+
+.fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
